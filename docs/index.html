@@ -51,11 +51,14 @@ a:hover{color:var(--gold)}
 .btn.ghost:hover{border-color:var(--mag);color:var(--mag)}
 .foot{margin-top:3rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.08);
   font-size:.68rem;color:rgba(160,190,210,.55);font-family:"IBM Plex Mono",monospace;line-height:1.6}
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;padding:.5rem .8rem;background:var(--cyan);color:#000;z-index:9;border-radius:6px}
 .note{font-size:.72rem;color:rgba(180,200,220,.55);margin-top:.85rem;line-height:1.5}
 @media(prefers-reduced-motion:reduce){#bg canvas{opacity:.35}}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div id="bg" aria-hidden="true"><canvas id="c"></canvas></div>
 <div class="wrap">
   <nav class="nav">
@@ -66,7 +69,7 @@ a:hover{color:var(--gold)}
     </div>
   </nav>
 
-  <header class="hero">
+  <main id="main"><header class="hero">
     <h1>Admit only what fits.</h1>
     <p class="lede">Magpie is a residual-honesty instrument for hard claims — patents, capture briefs, and live systems — so what you assert stays inside what you can actually hold.</p>
     <div class="chips">
@@ -101,13 +104,15 @@ a:hover{color:var(--gold)}
       <p>Near-term commercial SKU: a <strong>$1,000</strong> 1:1 T&amp;E residual-honesty brief (human-reviewed). Other SKUs stay unpublished unless separately named.</p>
       <div class="cta">
         <a class="btn" href="https://monsters-ink-107139.square.site" rel="noopener" target="_blank">Shop</a>
+        <a class="btn ghost" href="mailto:yeti.monstersink@gmail.com?subject=Magpie%20T%26E%20brief">Request brief</a>
         <a class="btn ghost" href="https://x.com/magpie_inventor" rel="noopener" target="_blank">Watch on X</a>
       </div>
       <p class="note">Shop link is the live Square surface. No fake prize dollars. Send/share/invoice still need Taylor’s go.</p>
     </article>
   </section>
 
-  <footer class="foot">
+  </main>
+<footer class="foot">
     Monsters Ink LLC · Magpie public face · Separate from <a href="https://snowphamtom.github.io/seraphim-organizer/">Seraphim Organizer</a><br/>
     Residual-honest · no unpublished claims · © <span id="y"></span>
   </footer>
